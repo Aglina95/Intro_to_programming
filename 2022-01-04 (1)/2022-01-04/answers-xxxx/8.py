@@ -1,5 +1,5 @@
 # YOUR CODE GOES HERE
-from itertools import compress
+import datetime
 class DataBase:
     def __init__(self, messages_file, meta_data_file):
         self.messages_file = messages_file
@@ -27,7 +27,20 @@ class DataBase:
 
 
     def show_date_range(self, from_year, from_month, from_day, to_year, to_month, to_day):
-        pass
+        for meta_data_line, message_line in zip(self.meta_data, self.messages):
+            meta_data_line_split = meta_data_line.split(" ")
+            year = int(meta_data_line_split[0])
+            month = int(meta_data_line_split[1])
+            day = int(meta_data_line_split[2])
+            date = datetime.datetime(year, month, day)
+
+            from_date = datetime.datetime(from_year, from_month, from_day)
+            to_date = datetime.datetime(to_year, to_month, to_day)
+
+            if date >= from_date and date <= to_date:
+                print(message_line)
+
+
 
     def show_by_match(self, message):
         for line in self.messages:
@@ -37,8 +50,8 @@ class DataBase:
 
 db = DataBase('../8/message.txt', '../8/meta.txt')
 
-db.show_by_author("Henrik")
+#db.show_by_author("Henrik")
 
-db.show_by_match("Har")
+#db.show_by_match("Har")
 
-
+db.show_date_range(1999, 12, 3, 2020, 12, 8)
