@@ -1,0 +1,10 @@
+If you don't know what the sorted running(or any other methods) time is, just write that the program has the running time of the sorted 
+
+Quadratic = O(n^2)
+Constant = O(1)
+Linear = O(n)
+Logarithmic = O(logn)
+
+#if you don't remember how to write a method, put the text from the exercise description to indicate what this method should do
+#by opening files you also get points
+#They ver ask for constant, linear or logarithmic when asking about difficulty in running time

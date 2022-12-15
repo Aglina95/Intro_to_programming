@@ -1,0 +1,9 @@
+# The evaluation result of the expressions go here, one per line. 
+# (You can remove these first two lines if you want.)
+3
+4222
+21
+243
+False
+True
+[3, 3, 3]

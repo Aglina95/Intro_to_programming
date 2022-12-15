@@ -1,0 +1,5 @@
+24
+dict_keys(['Amager', 'Indre By', 'Valby'])
+dict_items([('Amager', 0), ('Indre By', 176), ('Valby', 12)])
+3
+Amager is missing Red Wine!

@@ -1,0 +1,7 @@
+Steak, 120
+Curry, 60
+Fish, 35
+Rice, 10
+Egg, 32
+Bread, 10
+Pizza, 150
